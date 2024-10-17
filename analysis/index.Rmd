@@ -12,7 +12,7 @@ This  website contains scRNA-seq data analyses and integration with targeted mut
 
 # SCM-seq data analysis
 
-- [prova](00_malignant_non_malignant_annotations.html)
+- [Exploratory analysis and malignant cell annotation](00_malignant_non_malignant_annotations.html)
 
 
 

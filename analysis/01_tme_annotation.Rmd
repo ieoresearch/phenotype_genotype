@@ -59,7 +59,7 @@ mydimplot(
   srat,
   var = "aggregated_ct",
   reduction = "umap",
-  label = FALSE
+  label = TRUE
 )
 ```
 

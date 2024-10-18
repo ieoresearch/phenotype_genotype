@@ -217,7 +217,7 @@ mydimplot(srat, var = "aggregated_ct", reduction = "umap", label=FALSE)
 <!--     tmp, -->
 <!--     var = "aggregated_ct", -->
 <!--     reduction = "umap", -->
-<!--     label = FALSE -->
+<!--     label = TRUE -->
 <!--   )) -->
 
 <!-- ``` -->

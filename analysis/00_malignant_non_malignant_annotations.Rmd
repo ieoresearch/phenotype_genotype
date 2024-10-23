@@ -452,5 +452,7 @@ DT::datatable(
 ```
 
 ```{r}
-saveRDS(srat, "/hpcnfs/scratch/P_DIMA_SCMSEQ/analysis/scrnaseq/phenotype_genotype/data/00_malignant_non_malignant_annotation.rds")
+if(!file.exists("/hpcnfs/scratch/P_DIMA_SCMSEQ/analysis/scrnaseq/phenotype_genotype/data/00_malignant_non_malignant_annotation.rds")){
+  saveRDS(srat, "/hpcnfs/scratch/P_DIMA_SCMSEQ/analysis/scrnaseq/phenotype_genotype/data/00_malignant_non_malignant_annotation.rds")
+}
 ```

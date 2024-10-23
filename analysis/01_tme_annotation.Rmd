@@ -95,5 +95,7 @@ ggplot(normalized_frequencies, aes(x = sample_id, y = frequency, fill = compartm
 ```
 
 ```{r}
-saveRDS(srat, "/hpcnfs/scratch/P_DIMA_SCMSEQ/analysis/scrnaseq/phenotype_genotype/data/01_tme_annotation.rds")
+if(!file.exists("/hpcnfs/scratch/P_DIMA_SCMSEQ/analysis/scrnaseq/phenotype_genotype/data/01_tme_annotation.rds")){
+  saveRDS(srat, "/hpcnfs/scratch/P_DIMA_SCMSEQ/analysis/scrnaseq/phenotype_genotype/data/01_tme_annotation.rds")
+}
 ```

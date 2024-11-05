@@ -302,7 +302,7 @@ DT::datatable(
 ```
 
 We conducted differential gene expression analysis between the two groups and followed it with reactome pathway enrichment analysis. The dot plot below, along with the accompanying table, presents the enriched terms.
-We got only down-regulated genes (genes enriched in EZH2 wild-type + SRSF2 mutated cells), but none pathways has been found for this gene-set.
+We got only down-regulated genes (genes enriched in EZH2 wild-type + SRSF2 mutated cells), but no pathway was found for this gene-set.
 
 ```{r}
 
@@ -372,7 +372,7 @@ DT::datatable(
 )
 ```
 We conducted differential gene expression analysis between the two groups and followed it with reactome pathway enrichment analysis. The dot plot below, along with the accompanying table, presents the enriched terms.
-We got only down-regulated genes (genes enriched in EZH2 wild-type cells), but none pathways has been found for this gene-set.
+We got only down-regulated genes (genes enriched in EZH2 wild-type cells), but no pathway was found for this gene-set.
 
 ```{r}
 
@@ -440,7 +440,7 @@ DT::datatable(
 ```
 
 We conducted differential gene expression analysis between the two groups and followed it with reactome pathway enrichment analysis. The dot plot below, along with the accompanying table, presents the enriched terms.
-We got only down-regulated genes (genes enriched in SRSF2 wild-type cells), but none pathways has been found for this gene-set.
+We got only down-regulated genes (genes enriched in SRSF2 wild-type cells), but no pathway was found for this gene-set.
 
 ```{r}
 

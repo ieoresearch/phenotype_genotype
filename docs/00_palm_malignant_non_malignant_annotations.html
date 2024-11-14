@@ -500,16 +500,16 @@ This reproducible <a href="https://rmarkdown.rstudio.com">R Markdown</a> analysi
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomieoresearchphenotypegenotypetree2d42f36975728db1114e2fc697a0617e1e8dccd2targetblank2d42f36a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/ieoresearch/phenotype_genotype/tree/2d42f36975728db1114e2fc697a0617e1e8dccd2" target="_blank">2d42f36</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomieoresearchphenotypegenotypetreec30bbb858de37f24cac0245024b54cd2162f43c6targetblankc30bbb8a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/ieoresearch/phenotype_genotype/tree/c30bbb858de37f24cac0245024b54cd2162f43c6" target="_blank">c30bbb8</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomieoresearchphenotypegenotypetree2d42f36975728db1114e2fc697a0617e1e8dccd2targetblank2d42f36a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomieoresearchphenotypegenotypetreec30bbb858de37f24cac0245024b54cd2162f43c6targetblankc30bbb8a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/ieoresearch/phenotype_genotype/tree/2d42f36975728db1114e2fc697a0617e1e8dccd2" target="_blank">2d42f36</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/ieoresearch/phenotype_genotype/tree/c30bbb858de37f24cac0245024b54cd2162f43c6" target="_blank">c30bbb8</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -518,6 +518,9 @@ Note that you need to be careful to ensure that all relevant files for the analy
 Ignored files:
     Ignored:    data/
     Ignored:    src/
+
+Untracked files:
+    Untracked:  analysis/01_palm_tme_annotation.Rmd
 
 </code></pre>
 <p>
@@ -556,6 +559,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/ieoresearch/phenotype_genotype/blob/c30bbb858de37f24cac0245024b54cd2162f43c6/analysis/00_palm_malignant_non_malignant_annotations.Rmd" target="_blank">c30bbb8</a>
+</td>
+<td>
+mdelcorvo
+</td>
+<td>
+2024-11-14
+</td>
+<td>
+Fix sample names
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/ieoresearch/phenotype_genotype/5507d196d573b4cf0b7cff1b9d9999c527f44f84/docs/00_palm_malignant_non_malignant_annotations.html" target="_blank">5507d19</a>
+</td>
+<td>
+mdelcorvo
+</td>
+<td>
+2024-11-14
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -666,6 +703,17 @@ Date
 <tbody>
 <tr>
 <td>
+<a href="https://github.com/ieoresearch/phenotype_genotype/blob/5507d196d573b4cf0b7cff1b9d9999c527f44f84/docs/figure/00_palm_malignant_non_malignant_annotations.Rmd/umap_celltype_sampleid-1.png" target="_blank">5507d19</a>
+</td>
+<td>
+mdelcorvo
+</td>
+<td>
+2024-11-14
+</td>
+</tr>
+<tr>
+<td>
 <a href="https://github.com/ieoresearch/phenotype_genotype/blob/051d751e6749af4d8b9dfe2eeace8e04ebf3650c/docs/figure/00_palm_malignant_non_malignant_annotations.Rmd/umap_celltype_sampleid-1.png" target="_blank">051d751</a>
 </td>
 <td>
@@ -774,7 +822,7 @@ mdelcorvo
 <h1>Malignant cell annotation</h1>
 <p>To identify highly confident malignant cells, we focus on cell types known to be more likely to harbor malignancy, including “Early_myeloid”, “HSC_MPP”, “Late_myeloid”, “Mono”, “Eo_baso_mast”, “Erythroid”, and “MK”. We require that malignant cells be part of these predefined cell types based on aggregated annotations.</p>
 <p>Next, we impose an additional criterion: malignant cells should cluster distinctly from healthy bone marrow cells. Specifically, we require that these cells belong to clusters predominantly composed of malignant cells, with an adjustable threshold for determining the degree of malignancy within a cluster. This ensures that the cells are not just grouped with normal cells but form distinct populations.</p>
-<p>Finally, to strengthen the confidence in identifying malignant cells, we assess the relative expansion of each cell type within each patient compared to normal samples. Malignant cells should be expanded in AML patients compared to healthy controls, reinforcing the idea that their presence is abnormal.</p>
+<p>Finally, to strengthen the confidence in identifying malignant cells, we assess the relative expansion of each cell type within each patient compared to normal samples. Malignant cells should be expanded in PALM patients compared to healthy controls, reinforcing the idea that their presence is abnormal.</p>
 <div id="assess-the-cluster-composition" class="section level2">
 <h2>Assess the cluster composition</h2>
 <p>Below, we present a bar plot showing the proportion of normal and malignant cells in each cluster, quantifying the fraction of each cell type per cluster.</p>
@@ -1043,6 +1091,17 @@ Date
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+<a href="https://github.com/ieoresearch/phenotype_genotype/blob/5507d196d573b4cf0b7cff1b9d9999c527f44f84/docs/figure/00_palm_malignant_non_malignant_annotations.Rmd/unnamed-chunk-11-1.png" target="_blank">5507d19</a>
+</td>
+<td>
+mdelcorvo
+</td>
+<td>
+2024-11-14
+</td>
+</tr>
 <tr>
 <td>
 <a href="https://github.com/ieoresearch/phenotype_genotype/blob/051d751e6749af4d8b9dfe2eeace8e04ebf3650c/docs/figure/00_palm_malignant_non_malignant_annotations.Rmd/unnamed-chunk-11-1.png" target="_blank">051d751</a>

@@ -179,10 +179,10 @@ DT::datatable(
 
 ## Umap visualisation
 
-We evaluated data integration by analyzing the UMAP reduction and quantifying the proportion of each cell type across patients. As shown by both the UMAP visualization and the barplot quantification, T cells were enriched in the healthy bone marrow (hBM) samples, as expected. In contrast, AML patients exhibited variability in cell type distributions, with notable enrichment in early myeloid and HSC_MPP populations. Additionally, patient-specific differences were observed: sAML16 was enriched in monocytes, while AML4 had a higher proportion of Eo_baso_mast cells.
+We evaluated data integration by analyzing the UMAP reduction and quantifying the proportion of each cell type across patients. As shown by both the UMAP visualization and the barplot quantification, T cells were enriched in the healthy bone marrow (PALM_DON) samples, as expected. In contrast, PALM patients exhibited variability in cell type distributions, with notable enrichment in most of the samples for early myeloid and HSC_MPP populations.
 
 ```{r umap_celltype_sampleid, fig.height=6, fig.width=6}
-mydimplot(srat, var = "sample_id", reduction = "umap", label=TRUE)
+mydimplot1(srat, var = "sample_id", reduction = "umap", label=TRUE)
 ```
 
 
@@ -399,7 +399,7 @@ ggplot(normalized_frequencies, aes(x = sample_id, y = frequency, fill = tierI)) 
        x = "Patient",
        y = "Fraction of cells",
        fill = "Tier I") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(size = 9, angle = 45, hjust = 1))
 ```
 
 

@@ -399,7 +399,7 @@ ggplot(normalized_frequencies, aes(x = sample_id, y = frequency, fill = tierI)) 
        x = "Patient",
        y = "Fraction of cells",
        fill = "Tier I") +
-  theme(axis.text.x = element_text(size = 9, angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(size = 8, angle = 45, hjust = 1))
 ```
 
 
